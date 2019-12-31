@@ -11,29 +11,33 @@
     right: 0;
     bottom: 0;
     left: 0; }
+  .clock__minutes-hand {
+    background: #5f98a8;
+    height: 30%;
+    left: 49%;
+    position: absolute;
+    top: 20%;
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+    width: 2%; }
+  .clock__seconds-hand {
+    background: #c25d5d;
+    height: 40%;
+    left: 49.5%;
+    position: absolute;
+    top: 10%;
+    -webkit-transform-origin: 50% 80%;
+            transform-origin: 50% 80%;
+    width: 1%;
+    z-index: 2; }
+  .clock__minutes {
+    -webkit-animation: rotate 3600s infinite steps(60);
+            animation: rotate 3600s infinite steps(60); }
+  .clock__seconds {
+    -webkit-animation: rotate 60s infinite steps(60);
+            animation: rotate 60s infinite steps(60); }
 
-.minutes-hand {
-  background: #5f98a8;
-  height: 30%;
-  left: 49%;
-  position: absolute;
-  top: 20%;
-  -webkit-transform-origin: 50% 100%;
-          transform-origin: 50% 100%;
-  width: 2%; }
-
-.seconds-hand {
-  background: #c25d5d;
-  height: 40%;
-  left: 49.5%;
-  position: absolute;
-  top: 10%;
-  -webkit-transform-origin: 50% 80%;
-          transform-origin: 50% 80%;
-  width: 1%;
-  z-index: 2; }
-
-.seconds-hand::after {
+.clock__seconds-hand::after {
   content: "";
   position: absolute;
   width: 15px;
@@ -53,13 +57,5 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
-.clock__minutes {
-  -webkit-animation: rotate 3600s infinite steps(60);
-          animation: rotate 3600s infinite steps(60); }
-
-.clock__seconds {
-  -webkit-animation: rotate 60s infinite steps(60);
-          animation: rotate 60s infinite steps(60); }
 
 /*# sourceMappingURL=main.css.map */
