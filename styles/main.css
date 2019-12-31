@@ -31,7 +31,7 @@
   -webkit-transform-origin: 50% 80%;
           transform-origin: 50% 80%;
   width: 1%;
-  z-index: 8; }
+  z-index: 2; }
 
 .seconds-hand::after {
   content: "";
@@ -42,7 +42,7 @@
   bottom: -7.5%;
   right: -6px;
   border-radius: 50%;
-  z-index: 999; }
+  z-index: 3; }
 
 @-webkit-keyframes rotate {
   100% {
@@ -53,14 +53,6 @@
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
-.clock__minutes {
-  -webkit-animation: rotate 3600s infinite linear;
-          animation: rotate 3600s infinite linear; }
-
-.clock__seconds {
-  -webkit-animation: rotate 60s infinite linear;
-          animation: rotate 60s infinite linear; }
 
 .clock__minutes {
   -webkit-animation: rotate 3600s infinite steps(60);
